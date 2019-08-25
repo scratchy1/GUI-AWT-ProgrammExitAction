@@ -1,0 +1,18 @@
+import java.awt.*;
+import java.awt.event.*;
+
+public class ProgrammExitAction extends WindowAdapter implements ActionListener {
+    @Override
+    public void windowClosing(WindowEvent e) {
+        exitProgramm();
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        exitProgramm();
+    }
+    private void exitProgramm() {
+     // Stellvertretend fuer in der Praxis beliebig komplexen Code
+     System.exit(0);
+     }
+}
